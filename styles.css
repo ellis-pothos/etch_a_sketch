@@ -1,0 +1,22 @@
+/* #container {  */
+    /* display: flex;  */
+    /* flex-direction: column; */
+/* }  */
+
+.row {
+    display: flex;
+}
+
+.boxes { 
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.boxes:hover {
+    background-color: black; 
+}
+
