@@ -7,14 +7,25 @@ const boxContainer = document.createElement("div");
 boxContainer.classList.add("content");
 container.appendChild(boxContainer);
 
-const buttonContainer = document.createElement("div");
-buttonContainer.classList.add("buttonContainer");
-container.appendChild(buttonContainer);
+// container to contain the 
+const inputContainer = document.createElement("div");
+inputContainer.classList.add("inputContainer");
+container.appendChild(inputContainer);
+
+    const columnsInput = document.createElement("input");
+    columnsInput.classList.add("input");
+    columnsInput.setAttribute("placeholder", "How many columns do you want?");
+    inputContainer.appendChild(columnsInput);
+
+    const rowsInput = document.createElement("input");
+    rowsInput.classList.add("input");
+    rowsInput.setAttribute("placeholder", "How many rows do you want?");
+    inputContainer.appendChild(rowsInput);
 
     const button = document.createElement("button");
     button.id = "btn"
-    button.textContent = "PRESS ME"; 
-    buttonContainer.appendChild(button); 
+    button.textContent = "Submit"; 
+    inputContainer.appendChild(button); 
 
     // telling the computer what to do when the button is clicked 
     function howMany() {
