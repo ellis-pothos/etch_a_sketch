@@ -15,10 +15,7 @@
 }
 
 .boxes { 
-    background-color: aquamarine;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
+    background-color: rgb(255, 251, 214);
     flex: 1;  
 }
 
