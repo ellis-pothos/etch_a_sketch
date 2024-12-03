@@ -69,10 +69,16 @@ function newPad(userRows, userColumns) {
             box.id = "box";
             box.classList.add("boxes");
             row.appendChild(box);
-        }
+
+            box.addEventListener("mouseover", () => {
+                // console.log("test");
+                box.style.backgroundColor = "black";
+            });
+        }      
         boxContainer.appendChild(row); 
         // console.log("testing rows");
     }
+
 }
 
 
@@ -81,5 +87,3 @@ boxContainer.id = "boxContainer";
 boxContainer.classList.add("boxContainer");
 container.appendChild(boxContainer);
 
-
-    

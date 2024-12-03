@@ -1,26 +1,30 @@
-.mainContainer {
+.boxContainer {
     width: 960px; 
-    height: 960px;
+    height: 960px; 
+    display: flex;
+    flex-direction: column;
+    align-content: stretch; 
 }
 
 .row {
-    display: flex;
-
+    display:flex;  
+    align-content: stretch;  
+    justify-content: stretch;
+    height: 960px; 
+    box-sizing: border-box;
 }
 
 .boxes { 
-    height: auto;
-    width: auto;
-    flex: 1 1 1; 
     background-color: aquamarine;
     border-style: solid;
     border-color: black;
-    border-width: 2px;
+    border-width: 1px;
+    flex: 1;  
 }
 
-.boxes:hover {
-    background-color: black; 
-}
+/* .boxes:hover { */
+    /* background-color: black;  */
+/* } */
 
 .input {
     width: 300px; 
