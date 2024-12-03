@@ -28,7 +28,7 @@ container.appendChild(inputContainer);
     // when the user has input how many squares they want
     const button = document.createElement("button");
     button.id = "btn"
-    button.textContent = "Submit"; 
+    button.textContent = "Get new sketchpad"; 
     inputContainer.appendChild(button); 
 
         // telling the computer when to run function how many
@@ -57,7 +57,7 @@ function newPad(userRows, userColumns) {
     container.appendChild(boxContainer);
 
         // create new rows and columns according to user input
-    // console.log("testing newpad")
+    if (userRows <= 100 && userColumns <= 100) {        
     for (let r = 0; r < userRows; r++) {
         // newRow();
         const row = document.createElement("div");
@@ -71,16 +71,16 @@ function newPad(userRows, userColumns) {
             row.appendChild(box);
 
             box.addEventListener("mouseover", () => {
-                // console.log("test");
                 box.style.backgroundColor = "black";
             });
         }      
         boxContainer.appendChild(row); 
-        // console.log("testing rows");
+
     }
-
+    } else {
+        boxContainer.textContent = "ERROR - Please enter a number less than or equal to 100."
+    }
 }
-
 
 const boxContainer = document.createElement("div");
 boxContainer.id = "boxContainer";
